@@ -1,0 +1,12 @@
+Hcms主题是倡萌自用主题，所以很多功能设置都是以倡萌自己需要来设置的，时间精力有限，不可能做到全面。
+
+主题使用请看教程：http://www.cmhello.com/hcms-theme
+主题升级请看：http://www.cmhello.com/tag/Hcms
+
+
+本主题包有comments-ajax.php 和 comments-ajax-2.php 两个文件，如果无法支持评论，请自己将comments-ajax-2.php改名为comments-ajax.php 替换原来的
+  
+
+                                                                          倡萌  
+ 
+                                                                       20120501

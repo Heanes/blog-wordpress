@@ -1,0 +1,18 @@
+/* daqianduan.com / d4.1 / 2011.08.27 / haozi / hao.chen@qq.com */
+a{color:#006586;text-decoration:none}
+a:hover{color:#e20100}
+
+.header{background:#00779D;border-bottom-color:#6BBDD7}
+.header-bg{background:#007297;border-bottom-color:#005E7C}
+
+.nav{border-left-color:#005E7C;border-right-color:#007FA7}
+.nav li{border-right-color:#005E7C}
+.nav a{border-color:#007FA7}
+.nav a:hover,.nav .current-menu-item a,.nav .current-post-ancestor a{background:#007FA8;border-color:#007FA8;color:#fff}
+.nav a,.menu a{color:#D9E5E9}
+.nav  li ul li a {background: #007FA7;}
+.nav  li ul li a:hover {background: #007297;}
+.nav  li ul li {border-top: 1px solid #007FA7;border-bottom: 1px solid #005E7C;}
+.home-header .tit,.home-header .txt strong,.postmeta .tit{color:#006586}
+
+.post-list li:nth-child(even) a{color:#006586}

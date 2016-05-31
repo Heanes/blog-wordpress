@@ -1,0 +1,31 @@
+/* daqianduan.com / d4.1 / 2011.08.27 / haozi / hao.chen@qq.com */
+a{color:#007359;text-decoration:none}
+a:hover{color:#e20100}
+
+.header{background:#00886A;border-bottom-color:#4DB29C}
+.header-bg{background:#008265;border-bottom-color:#00634D}
+
+.nav{border-left-color:#00634D;border-right-color:#009171}
+.nav li{border-right-color:#00634D}
+.nav a{border-color:#009171}
+.nav a:hover,.nav .current-menu-item a,.nav .current-post-ancestor a{background:#009675;border-color:#0DA07F;color:#fff}
+.nav a,.menu a{color:#D9E6E3}
+.nav  li ul li a {background: #009171;}
+.nav  li ul li a:hover {background: #008265;}
+.nav  li ul li {border-top: 1px solid #009171;border-bottom: 1px solid #00634D;}
+.home-header .tit,.home-header .txt strong,.postmeta .tit{color:#006750}
+
+.post-list li:nth-child(even) a{color:#007359}
+
+.primary{
+	color:#fff;
+	border-color:#00634D;
+	background-color:#00886A;
+	background-image:-webkit-linear-gradient(#00886A,#00745A);
+	background-image:-moz-linear-gradient(#00886A,#00745A);
+	background-image:linear-gradient(#00886A,#00745A);
+	box-shadow:0 1px 1px #e6e6e6,inset 0 1px 0 #009171;
+	text-shadow:0 0 1px #00634D
+}
+.primary:hover{border-color:#00634D;}
+.primary:active{box-shadow:inset 0 1px 2px #00745A}
