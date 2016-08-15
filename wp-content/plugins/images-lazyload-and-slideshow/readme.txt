@@ -3,7 +3,7 @@ Contributors: xiaoxu125634
 Donate link: http://www.brunoxu.com/images-lazyload-and-slideshow.html
 Tags: lazy load, lazyload, images lazy load, images, lazy loading, lightbox, images gallery, images slideshow, gallery slideshow, custom html, fancybox, prettyPhoto, slimbox2
 Requires at least: 3.0
-Tested up to: 4.2.2
+Tested up to: 4.5.2
 Stable tag: trunk
 
 Lazy load all images. Add lightbox effect, gallery slideshow effect to custom selected images. Custom html.
@@ -51,6 +51,11 @@ If there's any question, leave a messages to me on page http://www.brunoxu.com/i
 
 
 == Changelog ==
+
+= 3.4 =
+* 2016-06-15
+* upgrade: fix compatibility with imgs with srcset attribute, feature start from WordPress 4.4.
+* upgrade: optimize lazyload process, use `$(document).trigger("lazyimgs")` to update cached lazyimgs.
 
 = 3.3 =
 * 2015-07-07

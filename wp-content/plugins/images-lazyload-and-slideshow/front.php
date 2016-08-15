@@ -8,6 +8,19 @@ $lazyload_applyed = FALSE;
 if ($config["lazyload"]) {
 	$lazyload_applyed = TRUE;
 
+	add_action('template_redirect', 'lazyload_slideshow_enqueue_scripts');
+	function lazyload_slideshow_enqueue_scripts() {
+		$skip_lazyload = apply_filters('lazyload_slideshow_skip_lazyload', false);
+
+		// don't lazyload for feeds, previews
+		if( $skip_lazyload || is_feed() || is_preview() ) {
+			return;
+		}
+
+		wp_enqueue_style('responsively-lazy', Lazyload_Slideshow_Plugin_Url.'responsively-lazy/1.2.1/responsivelyLazy.min.css');
+		wp_enqueue_script('responsively-lazy', Lazyload_Slideshow_Plugin_Url.'responsively-lazy/1.2.1/responsivelyLazy.min.js');
+	}
+
 	if ($config["lazyload_all"]) {
 		add_action('template_redirect','lazyload_slideshow_lazyload_obstart');
 		function lazyload_slideshow_lazyload_obstart() {
@@ -89,6 +102,7 @@ if ($config["lazyload"]) {
 			);
 		}
 
+		/*
 		$regexp = "/<img([^<>]*)src=['\"]([^<>'\"]*)['\"]([^<>]*)>/i";
 		$replace = '<img$1src="'.$alt_image_src.'" file="$2"$3><noscript>'.$matches[0].'</noscript>';
 		$lazyimg_str = preg_replace(
@@ -96,6 +110,36 @@ if ($config["lazyload"]) {
 			$replace,
 			$lazyimg_str
 		);
+		*/
+		if (stripos($lazyimg_str,'srcset=')) {
+			if (!stripos($lazyimg_str,'data-srcset=')) {
+				$regexp = "/<img([^<>]*)srcset=['\"]([^<>'\"]*)['\"]([^<>]*)>/i";
+				$replace = '<img$1srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="$2"$3>';
+				$lazyimg_str = preg_replace(
+					$regexp,
+					$replace,
+					$lazyimg_str
+				);
+				$lazyimg_str = str_ireplace('ls_lazyimg','responsively-lazy',$lazyimg_str);
+
+				/*global $responsively_lazy_loaded;
+				if (!isset($responsively_lazy_loaded)) $responsively_lazy_loaded = 0;
+				if (!$responsively_lazy_loaded) {
+					wp_enqueue_style('responsively-lazy',Lazyload_Slideshow_Plugin_Url.'responsively-lazy/1.2.1/responsivelyLazy.min.css');
+					wp_enqueue_script('responsively-lazy',Lazyload_Slideshow_Plugin_Url.'responsively-lazy/1.2.1/responsivelyLazy.min.js');
+					$responsively_lazy_loaded = 1;
+				}*/ // 没用
+			}
+			$lazyimg_str = str_ireplace('ls_lazyimg','',$lazyimg_str);
+		} else {
+			$regexp = "/<img([^<>]*)src=['\"]([^<>'\"]*)['\"]([^<>]*)>/i";
+			$replace = '<img$1src="'.$alt_image_src.'" file="$2"$3><noscript>'.$matches[0].'</noscript>';
+			$lazyimg_str = preg_replace(
+				$regexp,
+				$replace,
+				$lazyimg_str
+			);
+		}
 
 		return $lazyimg_str;
 	}
@@ -135,7 +179,19 @@ Array.prototype.pull=function(content){
 };
 
 jQuery(function($) {
-window._lazyimgs = $("img.ls_lazyimg");
+$(document).bind("lazyimgs",function(){
+	if (!window._lazyimgs) {
+		window._lazyimgs = $("img.ls_lazyimg");
+	} else {
+		var _lazyimgs_new = $("img.ls_lazyimg:not([lazyloadindexed=1])");
+		if (_lazyimgs_new.length > 0) {
+			//window._lazyimgs.add(_lazyimgs_new); // NG
+			window._lazyimgs = $(window._lazyimgs.toArray().concat(_lazyimgs_new.toArray()));
+		}
+	}
+	window._lazyimgs.attr("lazyloadindexed", 1);
+});
+$(document).trigger("lazyimgs");
 if (_lazyimgs.length == 0) {
 	return;
 }
