@@ -1,5 +1,5 @@
 <?php
-define('WP_RP_VERSION', '3.6');
+define('WP_RP_VERSION', '3.6.1');
 
 define('WP_RP_PLUGIN_FILE', plugin_basename(__FILE__));
 
@@ -444,8 +444,6 @@ function wp_rp_head_resources() {
 		: '');
 
 	$output .= "<script type=\"text/javascript\">\n" . $output_vars . "</script>\n";
-
-	$output .= '<script type="text/javascript" src="' . WP_RP_STATIC_BASE_URL . WP_RP_STATIC_LOADER_FILE . '?version=' . WP_RP_VERSION . '" async></script>' . "\n";
 
 	$static_url = plugins_url('static/', __FILE__);
 	$theme_url = plugins_url(WP_RP_STATIC_THEMES_PATH, __FILE__);
