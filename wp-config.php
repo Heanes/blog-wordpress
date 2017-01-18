@@ -15,16 +15,16 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress 数据库的名称 */
-define('DB_NAME', 'blog.heanes.com');
+define('DB_NAME', 'blog.wordpress.heanes.com');
 
 /** MySQL 数据库用户名 */
-define('DB_USER', 'root');
+define('DB_USER', 'web_user_heanes.com');
 
 /** MySQL 数据库密码 */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', 'p()P]aHqCEfwVY@7');
 
 /** MySQL 主机 */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
