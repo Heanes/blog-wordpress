@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: zh_CN\n"
 "Project-Id-Version: WordPress - 4.7.x - Administration\n"
 
@@ -26,143 +26,143 @@ msgctxt "start of week"
 msgid "1"
 msgstr "1"
 
-#: wp-admin/about.php:231
+#: wp-admin/about.php:232
 msgid "Customize changesets make changes in the customizer persistent, like autosave drafts. They also make exciting new features like starter content possible."
 msgstr "自定义变更集让定制器中的修改持久化，就像自动保存草稿一样。他们也让像起始内容一样的新功能成为可能。"
 
-#: wp-admin/about.php:230
+#: wp-admin/about.php:231
 msgid "Customize Changesets"
 msgstr "自定义变更集"
 
 #. translators: 1: register_setting(), 2:
 #. https://make.wordpress.org/core/2016/10/26/registering-your-settings-in-wordpress-4-7/
-#: wp-admin/about.php:223
+#: wp-admin/about.php:224
 msgid "%1$s <a href=\"%2$s\">has been enhanced</a> to include type, description, and REST API visibility."
 msgstr "%1$s<a href=\"%2$s\">已经强化</a>，加入包含类型、描述及REST API能见度管理。"
 
-#: wp-admin/about.php:219
+#: wp-admin/about.php:220
 msgid "Settings Registration API"
 msgstr "设置注册API"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/
-#: wp-admin/about.php:213
+#: wp-admin/about.php:214
 msgid "The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way."
 msgstr "依靠动作和过滤器的代码已被大幅调整与改写，同时修正了一些错误。"
 
-#: wp-admin/about.php:203
+#: wp-admin/about.php:204
 msgid "List tables, now with more than bulk edit and delete."
 msgstr "批处理现在除了编辑和删除外加入更多功能。"
 
-#: wp-admin/about.php:202
+#: wp-admin/about.php:203
 msgid "Custom Bulk Actions"
 msgstr "自定义批处理"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/
-#: wp-admin/about.php:196
+#: wp-admin/about.php:197
 msgid "WordPress 4.7 includes <a href=\"%s\">new functions, hooks, and behavior</a> for theme developers."
 msgstr "WordPress 4.7为主题开发者带来<a href=\"%s\">新函数、钩子和行为</a>。"
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:193
 msgid "More Theme API Goodies"
 msgstr "更多主题API功能"
 
-#: wp-admin/about.php:189
+#: wp-admin/about.php:190
 msgid "By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy."
 msgstr "通过开启所有文章类型的页面模板功能，主题开发者可以有更弹性的WordPress模板结构。"
 
-#: wp-admin/about.php:188
+#: wp-admin/about.php:189
 msgid "Post Type Templates"
 msgstr "文章类型模板"
 
 #. translators: %s: smiling face with smiling eyes emoji
-#: wp-admin/about.php:181
+#: wp-admin/about.php:182
 msgid "Even More Developer Happiness %s"
 msgstr "更多开发者的快乐%s"
 
 #. translators: %s: https://developer.wordpress.org/rest-api/
-#: wp-admin/about.php:169
+#: wp-admin/about.php:170
 msgid "Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>"
 msgstr "内容节点让您的WordPress拥有机器可读的额外访问资源，具备清晰、标准导向接口，为网站与插件、主题和App开创一条平稳的前进之路。准备好开始开发了吗？<a href=\"%s\">查看REST API参考。</a>"
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:165
 msgid "WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings."
 msgstr "WordPress 4.7为文章、评论、自定义字段、用户、元数据和设置带来了REST API节点。"
 
-#: wp-admin/about.php:163
+#: wp-admin/about.php:164
 msgid "Introducing REST API Content Endpoints"
 msgstr "向您介绍REST API内容节点"
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:157
 msgid "Just because your site is in one language doesn&#8217;t mean that everybody helping manage it prefers that language for their admin. Add more languages to your site and a user language option will show up in your user&#8217;s profiles."
 msgstr "只是因为您的网站在单一语言设定下，但这不代表每一位协助管理网站的伙伴都使用该语言。新增更多语言至您的网站，让用户可以在他的个人资料页面选择不同语言。"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:155
 msgid "Dashboard in your language"
 msgstr "让仪表盘使用您的语言"
 
-#: wp-admin/about.php:151
+#: wp-admin/about.php:152
 msgid "Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents."
 msgstr "在WordPress 4.7管理您的文件集变得更容易。上传PDF文件将会产生缩略图，因此您可以在所有文件中更轻易区分他们。"
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:150
 msgid "PDF Thumbnail Previews"
 msgstr "PDF缩略图预览"
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:142
 msgid "Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down."
 msgstr "有时候您只需要一些视觉上的微调就能使您的网站更臻完美。WordPress 4.7允许您加入自定义CSS并能立即在网站看到变化。实时预览加快您的工作速度，且无须反复刷新网页。"
 
-#: wp-admin/about.php:136
+#: wp-admin/about.php:137
 msgid "Many menus for sites contain links to the pages of your site, but what happens when you don&#8217;t have any pages yet? Now you can add new pages while building menus instead of leaving the customizer and abandoning your changes. Once you&#8217;ve published your customizations, you&#8217;ll have new pages ready for you to fill with content."
 msgstr "网站的许多菜单包含链接指向您的网站其他页面，但当您还没有任何页面时该怎么办？现在，您可以在建立菜单时新增页面，而不必离开定制器并放弃修改。一旦您发布了自定选项，您就可以准备好在新的页面加入内容。"
 
-#: wp-admin/about.php:134
+#: wp-admin/about.php:135
 msgid "Smoother Menu Building"
 msgstr "更平滑的菜单建立"
 
-#: wp-admin/about.php:128
+#: wp-admin/about.php:129
 msgid "Sometimes a big atmospheric video as a moving header image is just what you need to showcase your wares; go ahead and try it out with Twenty Seventeen. Need some video inspiration? Try searching for sites with video headers available for download and use."
 msgstr "有时候您想使用视频作为移动题图来展示您的作品，试试看“二〇一七”。需要一些视频灵感吗？试试看搜索提供下载、使用视频的网站。"
 
-#: wp-admin/about.php:116
+#: wp-admin/about.php:119
 msgid "Video Headers"
 msgstr "视频页头"
 
-#: wp-admin/about.php:113
+#: wp-admin/about.php:116
 msgid "Visible icons appear to show you which parts of your site can be customized while live previewing. Click on a shortcut and get straight to editing. Paired with starter content, getting started with customizing your site is faster than ever."
 msgstr "当实时预览时，可视化图标会显示在您网站能够自定义的部分。点击快捷方式直接进行编辑，与起始内容相互配合，自定义您的网站将会比以往来得更快。"
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:106
 msgid "Edit Shortcuts"
 msgstr "编辑快捷方式"
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:89
 msgid "To help give you a solid base to build from, individual themes can provide starter content that appears when you go to customize your brand new site. This can range from placing a business information widget in the best location to providing a sample menu with social icon links to a static front page complete with beautiful images. Don&#8217;t worry - nothing new will appear on the live site until you&#8217;re ready to save and publish your initial theme setup."
 msgstr "为了帮助您建立一个坚实的基础，当您自定新网站时，个别主题将显示起始内容。这可以将商业信息放置在最佳位置，以提供带有社交网络链接的示例菜单、美丽图案的静态首页。"
 
-#: wp-admin/about.php:81
+#: wp-admin/about.php:88
 msgid "Theme Starter Content"
 msgstr "主题起始内容"
 
-#: wp-admin/about.php:76
+#: wp-admin/about.php:83
 msgid "WordPress 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow."
 msgstr "WordPress 4.7为外观编辑加入新功能，帮助您完成主题的初始设置，在一个不间断的工作流程中对所有修改进行非破坏性的实时预览。"
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:82
 msgid "Your Site, Your Way"
 msgstr "您的网站，您说了算"
 
-#: wp-admin/about.php:69
+#: wp-admin/about.php:76
 msgid "Twenty Seventeen focuses on business sites and features a customizable front page with multiple sections. Personalize it with widgets, navigation, social menus, a logo, custom colors, and more. Our default theme for 2017 works great in many languages, on any device, and for a wide range of users."
 msgstr "“二〇一七”专注于商业网站，提供了一个可自定义各部分的首页。使用挂件、导航、社交菜单、标志、自定颜色等来个性化。我们的2017年默认主题能支持更多语言、任何设备及广泛的用户群。"
 
-#: wp-admin/about.php:63
+#: wp-admin/about.php:70
 msgid "A brand new default theme brings your site to life with immersive featured images and video headers."
 msgstr "一个全新默认主题可让您的网站通过引人入胜的特色图片和影音页头生动呈现。"
 
-#: wp-admin/about.php:62
+#: wp-admin/about.php:69
 msgid "Presenting Twenty Seventeen"
 msgstr "“二〇一七”介绍"
 
@@ -273,7 +273,7 @@ msgstr "抱歉，您不能附加文件到此文章。"
 
 #: wp-admin/freedoms.php:45 wp-admin/includes/plugin-install.php:235
 #: wp-admin/includes/plugin-install.php:599 wp-admin/plugin-install.php:82
-#: wp-admin/plugins.php:392
+#: wp-admin/plugins.php:400
 msgid "https://wordpress.org/plugins/"
 msgstr "https://wordpress.org/plugins/"
 
@@ -312,7 +312,7 @@ msgstr "原始"
 #: wp-admin/options-media.php:35 wp-admin/options-permalink.php:46
 #: wp-admin/options-reading.php:39 wp-admin/options-writing.php:46
 #: wp-admin/plugin-editor.php:157 wp-admin/plugin-install.php:99
-#: wp-admin/plugins.php:410 wp-admin/revision.php:121
+#: wp-admin/plugins.php:418 wp-admin/revision.php:121
 #: wp-admin/theme-editor.php:43 wp-admin/theme-install.php:115
 #: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:576
 #: wp-admin/upload.php:67 wp-admin/upload.php:211 wp-admin/user-edit.php:56
@@ -411,7 +411,7 @@ msgctxt "plugin"
 msgid "%s was successfully deleted."
 msgstr "%s被成功删除。"
 
-#: wp-admin/plugins.php:388
+#: wp-admin/plugins.php:396
 msgid "The search for installed plugins will search for terms in their name, description, or author."
 msgstr "搜索已安装的插件将在主题的名字、描述、作者和标签中搜索。"
 
@@ -905,13 +905,13 @@ msgid "The name of the database you want to use with WordPress."
 msgstr "将WordPress安装到哪个数据库？"
 
 #. translators: 1: plugin name, 2: plugin author
-#: wp-admin/plugins.php:310
+#: wp-admin/plugins.php:318
 msgctxt "plugin"
 msgid "%1$s by %2$s"
 msgstr "由%2$s制作的%1$s"
 
 #. translators: 1: plugin name, 2: plugin author
-#: wp-admin/plugins.php:306
+#: wp-admin/plugins.php:314
 msgid "%1$s by %2$s (will also <strong>delete its data</strong>)"
 msgstr "由%2$s制作的%1$s（<strong>其数据也将被一并删除</strong>）"
 
@@ -1221,7 +1221,7 @@ msgid "Welcome to %s. This is your first post. Edit or delete it, then start blo
 msgstr "欢迎来到%s。这是您的第一篇文章。编辑或删除它，然后开始写博客吧！"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:266
+#: wp-admin/about.php:267
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>版本%s</strong>修正了一个安全问题。"
 
@@ -1238,15 +1238,15 @@ msgstr "您可以在<a href=\"%s\">Gravatar</a>修改您的资料图片。"
 msgid "Profile Picture"
 msgstr "资料图片"
 
-#: wp-admin/about.php:263
+#: wp-admin/about.php:47 wp-admin/about.php:264
 msgid "Maintenance and Security Releases"
 msgstr "维护和安全更新"
 
-#: wp-admin/about.php:260
+#: wp-admin/about.php:261
 msgid "Security Releases"
 msgstr "安全更新"
 
-#: wp-admin/about.php:257
+#: wp-admin/about.php:258
 msgid "Maintenance Releases"
 msgstr "维护更新"
 
@@ -1446,23 +1446,23 @@ msgstr "过滤主题列表"
 msgid "%s files"
 msgstr "%s文件"
 
-#: wp-admin/plugins.php:490
+#: wp-admin/plugins.php:498
 msgid "All selected plugins are up to date."
 msgstr "所有选择的插件都是最新的。"
 
-#: wp-admin/plugins.php:473
+#: wp-admin/plugins.php:481
 msgid "The selected plugin has been <strong>deleted</strong>."
 msgstr "选择的插件已被<strong>删除</strong>。"
 
-#: wp-admin/plugin-install.php:105 wp-admin/plugins.php:416
+#: wp-admin/plugin-install.php:105 wp-admin/plugins.php:424
 msgid "Plugins list"
 msgstr "插件列表"
 
-#: wp-admin/plugin-install.php:104 wp-admin/plugins.php:415
+#: wp-admin/plugin-install.php:104 wp-admin/plugins.php:423
 msgid "Plugins list navigation"
 msgstr "插件列表导航"
 
-#: wp-admin/plugin-install.php:103 wp-admin/plugins.php:414
+#: wp-admin/plugin-install.php:103 wp-admin/plugins.php:422
 msgid "Filter plugins list"
 msgstr "过滤插件列表"
 
@@ -1640,7 +1640,7 @@ msgstr "项目列表导航"
 msgid "Filter items list"
 msgstr "过滤项目列表"
 
-#: wp-admin/includes/class-wp-press-this.php:1483
+#: wp-admin/includes/class-wp-press-this.php:1526
 msgid "Saving&hellip;"
 msgstr "保存中…"
 
@@ -1921,11 +1921,11 @@ msgstr[0] "此作者有%s篇文章"
 msgid "Live Preview &#8220;%s&#8221;"
 msgstr "实时预览“%s”"
 
-#: wp-admin/includes/class-wp-press-this.php:1486
+#: wp-admin/includes/class-wp-press-this.php:1529
 msgid "More actions"
 msgstr "更多动作"
 
-#: wp-admin/includes/class-wp-press-this.php:223
+#: wp-admin/includes/class-wp-press-this.php:241
 msgid "This category already exists."
 msgstr "此分类已存在。"
 
@@ -2173,7 +2173,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Editing_Files\">文件编辑文档
 msgid "<a href=\"https://codex.wordpress.org/Template_Tags\">Documentation on Template Tags</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Template_Tags\">模板标签文档</a>"
 
-#: wp-admin/plugins.php:409
+#: wp-admin/plugins.php:417
 msgid "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">Documentation on Managing Plugins</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">管理插件文档</a>"
 
@@ -2252,7 +2252,7 @@ msgstr "https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
 msgid "The <a href=\"https://codex.wordpress.org/Glossary#Character_set\">character encoding</a> of your site (UTF-8 is recommended)"
 msgstr "您的站点的<a href=\"https://codex.wordpress.org/Glossary#Character_set\">字符编码</a>（推荐使用UTF-8）"
 
-#: wp-admin/includes/class-wp-press-this.php:1491
+#: wp-admin/includes/class-wp-press-this.php:1534
 msgid "Standard Editor"
 msgstr "标准编辑器"
 
@@ -2351,7 +2351,7 @@ msgstr "一篇文章未更新，有其他人正在编辑。"
 msgid "1 page not updated, somebody is editing it."
 msgstr "一个页面未更新，有其他人正在编辑。"
 
-#: wp-admin/plugins.php:296
+#: wp-admin/plugins.php:304
 msgid "These plugins may be active on other sites in the network."
 msgstr "此插件可能在网络上的其他站点中被激活。"
 
@@ -2362,15 +2362,15 @@ msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] "%s项目"
 
-#: wp-admin/plugins.php:298
+#: wp-admin/plugins.php:306
 msgid "You are about to remove the following plugins:"
 msgstr "您将要删除以下插件："
 
-#: wp-admin/plugins.php:294
+#: wp-admin/plugins.php:302
 msgid "Delete Plugins"
 msgstr "删除插件"
 
-#: wp-admin/includes/class-wp-press-this.php:1333
+#: wp-admin/includes/class-wp-press-this.php:1367
 msgid "Hide post options"
 msgstr "隐藏文章选项"
 
@@ -2493,67 +2493,67 @@ msgctxt "revision date short format"
 msgid "j M @ H:i"
 msgstr "n月j日 @ H:i"
 
-#: wp-admin/includes/class-wp-press-this.php:241
+#: wp-admin/includes/class-wp-press-this.php:259
 msgid "This category cannot be added. Please change the name and try again."
 msgstr "此分类不能被添加，请修改名称并重试。"
 
-#: wp-admin/includes/class-wp-press-this.php:248
+#: wp-admin/includes/class-wp-press-this.php:266
 msgid "Error while adding the category. Please try again later."
 msgstr "添加分类时出错，请稍后再试。"
 
-#: wp-admin/includes/class-wp-press-this.php:859
+#: wp-admin/includes/class-wp-press-this.php:887
 msgid "Toggle add category"
 msgstr "切换添加分类"
 
-#: wp-admin/includes/class-wp-press-this.php:884
+#: wp-admin/includes/class-wp-press-this.php:912
 msgid "Search categories by name"
 msgstr "按名称搜索分类"
 
-#: wp-admin/includes/class-wp-press-this.php:886
+#: wp-admin/includes/class-wp-press-this.php:914
 msgid "Search categories"
 msgstr "搜索分类"
 
-#: wp-admin/includes/class-wp-press-this.php:1138
+#: wp-admin/includes/class-wp-press-this.php:1166
 msgctxt "Used in Press This to indicate where the content comes from."
 msgid "Source:"
 msgstr "来源："
 
-#: wp-admin/includes/class-wp-press-this.php:1331
+#: wp-admin/includes/class-wp-press-this.php:1365
 msgid "Show post options"
 msgstr "显示文章选项"
 
-#: wp-admin/includes/class-wp-press-this.php:1244
+#: wp-admin/includes/class-wp-press-this.php:1272
 msgid "Press This!"
 msgstr "按这里！"
 
-#: wp-admin/includes/class-wp-press-this.php:1339
+#: wp-admin/includes/class-wp-press-this.php:1373
 msgid "Scan site for content"
 msgstr "在站点上扫描内容"
 
-#: wp-admin/includes/class-wp-press-this.php:1340
+#: wp-admin/includes/class-wp-press-this.php:1374
 msgid "Enter a URL to scan"
 msgstr "输入URL来扫描"
 
-#: wp-admin/includes/class-wp-press-this.php:1341
+#: wp-admin/includes/class-wp-press-this.php:1375
 msgid "Scan"
 msgstr "扫描"
 
-#: wp-admin/includes/class-wp-press-this.php:1367
+#: wp-admin/includes/class-wp-press-this.php:1402
 msgid "You should upgrade <a href=\"%s\" target=\"_blank\">your bookmarklet</a> to the latest version!"
 msgstr "您应当升级<a href=\"%s\" target=\"_blank\">您的浏览器书签</a>到最新版！"
 
-#: wp-admin/includes/class-wp-press-this.php:1376
-#: wp-admin/includes/class-wp-press-this.php:1377
+#: wp-admin/includes/class-wp-press-this.php:1411
+#: wp-admin/includes/class-wp-press-this.php:1412
 msgid "Post title"
 msgstr "文章标题"
 
-#: wp-admin/includes/class-wp-press-this.php:1381
+#: wp-admin/includes/class-wp-press-this.php:1416
 msgid "Suggested media"
 msgstr "推荐媒体"
 
-#: wp-admin/includes/class-wp-press-this.php:1444
-#: wp-admin/includes/class-wp-press-this.php:1454
-#: wp-admin/includes/class-wp-press-this.php:1463
+#: wp-admin/includes/class-wp-press-this.php:1483
+#: wp-admin/includes/class-wp-press-this.php:1494
+#: wp-admin/includes/class-wp-press-this.php:1505
 msgid "Back to post options"
 msgstr "返回文章选项"
 
@@ -5270,7 +5270,7 @@ msgstr "您可以导出整个站点的内容，然后在另一个WordPress乃至
 msgid "New users will receive an email letting them know they&#8217;ve been added as a user for your site. This email will also contain their password. Check the box if you don&#8217;t want the user to receive a welcome email."
 msgstr "新用户将收到一封电子邮件，告知其已被添加至您的站点。这封邮件包含他们的密码。若您不希望发送“欢迎邮件”，请选择下面的复选框。"
 
-#: wp-admin/plugins.php:443
+#: wp-admin/plugins.php:451
 msgid "The plugin generated %d characters of <strong>unexpected output</strong> during activation. If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
 msgstr "这个插件在启用的过程中产生了%d个字符的<strong>异常输出</strong>。如果您遇到了“headers already sent”错误、联合feed（如RSS）出错等问题，请尝试禁用或移除本插件。"
 
@@ -5345,26 +5345,27 @@ msgid "Contributing Developers"
 msgstr "贡献开发者"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:271
+#: wp-admin/about.php:272
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>%1$s 版本</strong>修复了 %2$s 个问题。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:48 wp-admin/about.php:279
+#: wp-admin/about.php:48 wp-admin/about.php:55 wp-admin/about.php:280
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s 版本</strong>修补了安全漏洞、修正了 %2$s 个问题。"
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:50 wp-admin/about.php:283
+#: wp-admin/about.php:50 wp-admin/about.php:53 wp-admin/about.php:57
+#: wp-admin/about.php:284
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "欲了解更多，参见<a href=\"%s\">发行注记</a>。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:275
+#: wp-admin/about.php:276
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s 版本</strong>修补了安全漏洞、修正了 %2$s 个问题。"
@@ -5374,15 +5375,15 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "欢迎访问WordPress仪表盘！在您每次登录站点后，您都会看到本页面。您可以在这里访问WordPress的各种管理页面。点击任何页面标题上方的“帮助”选项卡可阅读相应帮助信息。"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:268
+#: wp-admin/about.php:52 wp-admin/about.php:269
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>版本%s</strong>修正了一些安全问题。"
 
-#: wp-admin/about.php:256
+#: wp-admin/about.php:257
 msgid "Maintenance Release"
 msgstr "维护更新"
 
-#: wp-admin/about.php:259
+#: wp-admin/about.php:260
 msgid "Security Release"
 msgstr "安全更新"
 
@@ -5390,7 +5391,7 @@ msgstr "安全更新"
 msgid "What&#8217;s New"
 msgstr "更新内容"
 
-#: wp-admin/about.php:47 wp-admin/about.php:262
+#: wp-admin/about.php:263
 msgid "Maintenance and Security Release"
 msgstr "维护和安全更新"
 
@@ -5402,7 +5403,7 @@ msgstr "这个画面可以让您选择您的永久链接结构。您可以选择
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "欢迎使用WordPress %1$s。<a href=\"%2$s\">了解更多</a>。"
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:243
 msgid "Return to Updates"
 msgstr "返回“更新”"
 
@@ -5410,7 +5411,7 @@ msgstr "返回“更新”"
 msgid "You can upload media files here without creating a post first. This allows you to upload files to use with posts and pages later and/or to get a web link for a particular file that you can share. There are three options for uploading files:"
 msgstr "您可以不创建文章，直接上传多媒体文件。这样，您就可以得到一个用于分享的网络链接，当然，也可以在日后将这写媒体文件用在文章中。有如下三种上传文件的选择："
 
-#: wp-admin/plugins.php:397
+#: wp-admin/plugins.php:405
 msgid "Troubleshooting"
 msgstr "故障排除"
 
@@ -5682,11 +5683,11 @@ msgstr "您使用的插件或主题为了使用add_meta_box()似乎直接包含�
 msgid "Welcome to WordPress %s"
 msgstr "欢迎使用WordPress %s"
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:243
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "返回“仪表盘” &rarr; “更新”"
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:246
 msgid "Go to Dashboard &rarr; Home"
 msgstr "前往“仪表盘” &rarr; “首页”"
 
@@ -5836,7 +5837,7 @@ msgstr "错误：您正在文章草稿上发表评论。"
 #: wp-admin/options-general.php:39 wp-admin/options-media.php:28
 #: wp-admin/options-permalink.php:20 wp-admin/options-reading.php:22
 #: wp-admin/options-writing.php:20 wp-admin/plugin-editor.php:143
-#: wp-admin/plugin-install.php:80 wp-admin/plugins.php:385
+#: wp-admin/plugin-install.php:80 wp-admin/plugins.php:393
 #: wp-admin/revision.php:115 wp-admin/theme-editor.php:25
 #: wp-admin/theme-install.php:98 wp-admin/themes.php:82
 #: wp-admin/update-core.php:556 wp-admin/upload.php:48 wp-admin/upload.php:189
@@ -5913,7 +5914,7 @@ msgstr "添加用户"
 #: wp-admin/options-media.php:33 wp-admin/options-permalink.php:43
 #: wp-admin/options-reading.php:37 wp-admin/options-writing.php:44
 #: wp-admin/plugin-editor.php:154 wp-admin/plugin-install.php:97
-#: wp-admin/plugins.php:408 wp-admin/revision.php:119
+#: wp-admin/plugins.php:416 wp-admin/revision.php:119
 #: wp-admin/theme-editor.php:38 wp-admin/theme-install.php:113
 #: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:574
 #: wp-admin/upload.php:65 wp-admin/upload.php:209 wp-admin/user-edit.php:54
@@ -6015,7 +6016,7 @@ msgstr "编辑"
 msgid "Add New User"
 msgstr "添加用户"
 
-#: wp-admin/comment.php:149 wp-admin/plugins.php:290 wp-admin/plugins.php:296
+#: wp-admin/comment.php:149 wp-admin/plugins.php:298 wp-admin/plugins.php:304
 #: wp-admin/theme-editor.php:272
 msgid "Caution:"
 msgstr "注意："
@@ -6107,7 +6108,7 @@ msgstr ""
 msgid "Featured Images"
 msgstr "特色图像"
 
-#: wp-admin/includes/class-wp-press-this.php:823
+#: wp-admin/includes/class-wp-press-this.php:845
 #: wp-admin/includes/meta-boxes.php:385 wp-admin/includes/theme.php:263
 msgid "Post Formats"
 msgstr "文章形式"
@@ -6158,7 +6159,7 @@ msgid "You can find additional themes for your site by using the Theme Browser/I
 msgstr "通过主题浏览/安装器，您可以为您的站点安装其它主题。主题浏览/安装器显示的是来自<a href=\"%s\">WordPress.org主题目录</a>的主题。这些主题都是由第三方设计开发并免费提供的，且与WordPress所用的许可证相兼容。"
 
 #. translators: %s: WordPress Plugin Directory URL
-#: wp-admin/plugins.php:391
+#: wp-admin/plugins.php:399
 msgid "If you would like to see more plugins to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional plugins from the <a href=\"%s\">WordPress Plugin Directory</a>. Plugins in the WordPress Plugin Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!"
 msgstr "若您希望从更多主题中选择，请点击“安装主题”选项卡。切换到“安装主题”选项卡后，您就可以在<a href=\"%s\">WordPress.org主题目录</a>中浏览或搜索主题了。WordPress主题目录中的主题是由第三方设计开发的，且与WordPress所用的许可证相兼容。哦对了，它们是免费的！"
 
@@ -6327,11 +6328,11 @@ msgstr "第%1$s页，共%2$s页"
 msgid "%s Page Template"
 msgstr "%s页面模板"
 
-#: wp-admin/includes/ajax-actions.php:3783 wp-admin/plugins.php:441
+#: wp-admin/includes/ajax-actions.php:3783 wp-admin/plugins.php:449
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "您不能删除主站点正在使用的插件。"
 
-#: wp-admin/plugins.php:290
+#: wp-admin/plugins.php:298
 msgid "This plugin may be active on other sites in the network."
 msgstr "这个插件可能已在网络的其它站点中启用了。"
 
@@ -6921,7 +6922,7 @@ msgstr "请从下拉菜单中选择要编辑的插件，然后点选您希望编
 msgid "You can customize the display of this screen using the Screen Options tab and/or the dropdown filters above the links table."
 msgstr "您可以通过“显示选项”或链接列表上方的下拉菜单过滤器来自定义本页面的显示。"
 
-#: wp-admin/plugins.php:399
+#: wp-admin/plugins.php:407
 msgid "Most of the time, plugins play nicely with the core of WordPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue."
 msgstr "通常每个插件都能和其他插件以及WordPress核心程序正常工作。但是，有的时候某些插件会和其他插件相冲突，进而产生兼容性问题。如果您的站点工作异常，可能是这个原因导致的。您可尝试禁用所有插件，再逐个启用，以排除问题。"
 
@@ -7085,7 +7086,7 @@ msgstr "您可在“显示选项”中依据您的需要隐藏或显示每页显
 msgid "You can refine the list to show only posts in a specific category or from a specific month by using the dropdown menus above the posts list. Click the Filter button after making your selection. You also can refine the list by clicking on the post author, category or tag in the posts list."
 msgstr "通过在文章列表上方的下拉菜单中选择，您可单独查看显示某一分类中的文章，或是某月发布的文章。点击列表中作者、分类，或标签也可令列表只显示那些内容。"
 
-#: wp-admin/plugins.php:526
+#: wp-admin/plugins.php:534
 msgid "Search Installed Plugins"
 msgstr "搜索已安装插件"
 
@@ -7533,7 +7534,7 @@ msgstr "查看所有"
 msgid "Please enter a valid menu name."
 msgstr "请输入有效的菜单名称。"
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:246
 msgid "Go to Dashboard"
 msgstr "前往“仪表盘”"
 
@@ -7546,19 +7547,19 @@ msgstr[0] "强制使用<span class=\"count\">（%s）</span>"
 msgid "Inactive:"
 msgstr "未启用："
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:338
 msgid "Yes, delete these files and data"
 msgstr "是，删除这些文件和数据"
 
-#: wp-admin/plugins.php:317
+#: wp-admin/plugins.php:325
 msgid "Are you sure you wish to delete these files and data?"
 msgstr "您确定删除这些文件和数据？"
 
-#: wp-admin/plugins.php:288
+#: wp-admin/plugins.php:296
 msgid "Delete Plugin"
 msgstr "删除插件"
 
-#: wp-admin/plugins.php:292
+#: wp-admin/plugins.php:300
 msgid "You are about to remove the following plugin:"
 msgstr "您将要删除以下插件："
 
@@ -8041,57 +8042,57 @@ msgstr "访问插件主页"
 msgid "Network Deactivate"
 msgstr "在整个网络停用"
 
-#: wp-admin/plugins.php:488
+#: wp-admin/plugins.php:496
 msgid "Selected plugins <strong>deactivated</strong>."
 msgstr "选中插件<strong>已停用</strong>。"
 
-#: wp-admin/plugins.php:486
+#: wp-admin/plugins.php:494
 msgid "Plugin <strong>deactivated</strong>."
 msgstr "插件<strong>已停用</strong>。"
 
-#: wp-admin/plugins.php:484
+#: wp-admin/plugins.php:492
 msgid "Selected plugins <strong>activated</strong>."
 msgstr "选中插件<strong>已启用</strong>。"
 
-#: wp-admin/plugins.php:482
+#: wp-admin/plugins.php:490
 msgid "Plugin <strong>activated</strong>."
 msgstr "插件<strong>已启用</strong>。"
 
-#: wp-admin/plugins.php:475
+#: wp-admin/plugins.php:483
 msgid "The selected plugins have been <strong>deleted</strong>."
 msgstr "所选插件<strong>已删除</strong>。"
 
-#: wp-admin/plugins.php:467
+#: wp-admin/plugins.php:475
 msgid "Plugin could not be deleted due to an error: %s"
 msgstr "无法删除插件，因为发生了错误：%s"
 
-#: wp-admin/plugins.php:445
+#: wp-admin/plugins.php:453
 msgid "Plugin could not be activated because it triggered a <strong>fatal error</strong>."
 msgstr "无法启用插件，因为它引起了一个<strong>致命错误</strong>（fatal error）。"
 
 #. translators: 1: plugin file 2: error message
-#: wp-admin/plugins.php:430
+#: wp-admin/plugins.php:438
 msgid "The plugin %1$s has been <strong>deactivated</strong> due to an error: %2$s"
 msgstr "插件%1$s已被<strong>禁用</strong>，因为以下错误：%2$s"
 
 #. translators: WP_PLUGIN_DIR constant value
-#: wp-admin/plugins.php:402
+#: wp-admin/plugins.php:410
 msgid "If something goes wrong with a plugin and you can&#8217;t use WordPress, delete or rename that file in the %s directory and it will be automatically deactivated."
 msgstr "如果因为插件出现问题而让您无法使用WordPress，您可以删除或重命名%s目录中的那个文件，其就会被自动禁用。"
 
-#: wp-admin/plugins.php:387
+#: wp-admin/plugins.php:395
 msgid "Plugins extend and expand the functionality of WordPress. Once a plugin is installed, you may activate it or deactivate it here."
 msgstr "插件拓展、拓充WordPress的功能。插件安装后，您可以在这里启用或者停用它。"
 
-#: wp-admin/plugins.php:336
+#: wp-admin/plugins.php:344
 msgid "No, return me to the plugin list"
 msgstr "不，返回到插件列表"
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:338
 msgid "Yes, delete these files"
 msgstr "是，删除这些文件"
 
-#: wp-admin/plugins.php:319
+#: wp-admin/plugins.php:327
 msgid "Are you sure you wish to delete these files?"
 msgstr "您确定要删除这些文件吗？"
 
@@ -8605,7 +8606,7 @@ msgid "Profile"
 msgstr "个人资料"
 
 #. translators: add new plugin
-#: wp-admin/menu.php:208 wp-admin/plugins.php:496
+#: wp-admin/menu.php:208 wp-admin/plugins.php:504
 msgctxt "plugin"
 msgid "Add New"
 msgstr "安装插件"
@@ -10034,7 +10035,7 @@ msgstr "驳回这条评论"
 msgid "Approve this comment"
 msgstr "批准这条评论"
 
-#: wp-admin/includes/class-wp-press-this.php:1482
+#: wp-admin/includes/class-wp-press-this.php:1525
 #: wp-admin/includes/meta-boxes.php:269 wp-admin/includes/meta-boxes.php:270
 msgid "Submit for Review"
 msgstr "提请审批"
