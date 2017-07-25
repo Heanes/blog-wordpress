@@ -124,11 +124,20 @@ function wp_rp_set_global_notice() {
 
 function wp_rp_activate_hook() {
 	wp_rp_get_options();
-	wp_rp_schedule_notifications_cron();
+
+    // setup mixpanel
+    global $wprp_mp;
+    $wprp_mp->create_profile([], "wprp");
+    $wprp_mp->update_profile_property("wprp_activated", true);
+    $wprp_mp->track("wprp_activated");
 }
 
 function wp_rp_deactivate_hook() {
-	wp_rp_unschedule_notifications_cron();
+    // setup mixpanel
+    global $wprp_mp;
+    $wprp_mp->create_profile([], "wprp");
+    $wprp_mp->update_profile_property("wprp_activated", false);
+    $wprp_mp->track("wprp_activated");
 }
 
 function wp_rp_upgrade() {
@@ -254,6 +263,13 @@ function wp_rp_is_classic() {
 		return true;
 	}
 	return false;
+}
+
+function wp_rp_migrate_3_6_3() {
+	$meta = get_option('wp_rp_meta');
+	$meta['version'] = '3.6.4';
+	$meta['new_user'] = false;
+	update_option('wp_rp_meta', $meta);
 }
 
 function wp_rp_migrate_3_6_2() {

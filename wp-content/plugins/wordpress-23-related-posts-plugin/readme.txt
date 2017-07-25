@@ -3,8 +3,8 @@ Contributors: sovrn, zemanta
 Tags: related,posts,post,related posts,plugin,seo,sovrn
 License: GPLv2
 Requires at least: 3.6
-Tested up to: 4.6
-Stable tag: 3.6.3
+Tested up to: 4.7
+Stable tag: 3.6.4
 
 WordPress Related Posts - the plugin for related posts with thumbnails. Caching included.
 
@@ -20,6 +20,10 @@ After installation, go to Settings -> Related Posts in your plugins list and Tur
 
 
 == Frequently Asked Questions ==
+
+= What php version does this plugin support? =
+
+We currently only support php versions 5.4 or greater.
 
 = What does this plugin do? =
 
@@ -88,6 +92,10 @@ New thumbnailer might break backwards compatibility for blogs with custom thumbn
 Fix for security vulnerability. Upgrade immediately.
 
 == Changelog ==
+
+= 3.6.4 =
+* Added error and app performance monitoring to help us fix bugs and improve performance.
+* Requires php 5.4 or greater.
 
 = 3.6.3 =
 * Rebrand

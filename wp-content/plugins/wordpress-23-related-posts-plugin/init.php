@@ -1,5 +1,5 @@
 <?php
-define('WP_RP_VERSION', '3.6.3');
+define('WP_RP_VERSION', '3.6.4');
 
 define('WP_RP_PLUGIN_FILE', plugin_basename(__FILE__));
 
@@ -15,13 +15,23 @@ include_once(dirname(__FILE__) . '/recommendations.php');
 include_once(dirname(__FILE__) . '/edit_related_posts.php');
 include_once(dirname(__FILE__) . '/compatibility.php');
 
-register_activation_hook(__FILE__, 'wp_rp_activate_hook');
-register_deactivation_hook(__FILE__, 'wp_rp_deactivate_hook');
+
+require_once(__DIR__ . "/analytics.php");
+require_once(__DIR__ . "/utils.php");
+
+if(!class_exists("Mixpanel")) {
+    require_once(__DIR__ . "/mixpanel/lib/Mixpanel.php");
+}
+
+// setup mixpanel globally for RP
+global $wprp_mp;
+$wprp_mp = new wprp_analytics("ef0f7a11e41c9b6da92490c75b45e141");
+
+register_activation_hook(__DIR__ . "/wp_related_posts.php", 'wp_rp_activate_hook');
+register_deactivation_hook(__DIR__ . "/wp_related_posts.php", 'wp_rp_deactivate_hook');
 
 add_action('wp_head', 'wp_rp_head_resources');
-
 add_action('plugins_loaded', 'wp_rp_init_zemanta');
-
 
 function wp_rp_init_zemanta() {
 	include_once(dirname(__FILE__) . '/zemanta/zemanta.php');
