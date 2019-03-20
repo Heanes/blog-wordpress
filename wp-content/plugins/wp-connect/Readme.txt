@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: smyx
-Donate link: http://blogqun.com/wp-connect.html
+Donate link: https://wptao.com/wp-connect.html
 Tags: comments,post,wp-connect,twitter,qq,sina,tencent,qzone,taobao,msn,tianya,netease,sohu,douban,baidu,renren,kaixin001,wbto,google,yahoo,connect,weixin,wechat,lofter,tumblr,腾讯微博,新浪微博,搜狐微博,网易微博,人人网,开心网,豆瓣,天涯,百度,淘宝,微博通,登录,登陆,连接,同步,gtalk机器人,灯鹭,社会化评论,Denglu,Denglu评论,评论,disqus,pinglunla,uyan,youyan,duoshuo,widget,share
 Requires at least: 3.0
-Tested up to: 4.2.2
-Stable tag: 2.5.5
+Tested up to: 4.9.4
+Stable tag: 2.5.6
 
 支持使用20家合作网站帐号登录WordPress，同步文章、评论到微博/SNS，支持使用社会化评论。
 
@@ -12,7 +12,7 @@ Stable tag: 2.5.5
 
 **Wordpress连接微博专业版V4.1 已经震撼发布**
 
-详细文档: http://blogqun.com/doc/wp-connect.html
+详细文档: https://wptao.com/doc/wp-connect.html
 
 1. 使用微信、QQ、新浪微博等21个社交帐号登录您的网站。
 2. 同步文章、评论到13个微博/SNS。
@@ -23,11 +23,11 @@ Stable tag: 2.5.5
 7. 写文章/发微博WAP页面（适用于手机浏览器）
 8. 隐藏文章的部分或者全部内容，用户通过登录、回复、分享等行为后才能显示隐藏的内容。
 9. 支持wp后台自动升级。
-10. **最新插件**：[WordPress连接微信](http://blogqun.com/wechat.html) ，支持使用微信发布微博。
+10. **最新插件**：[WordPress连接微信](https://wptao.com/wechat.html) ，支持使用微信发布微博。
 
-详细说明: http://blogqun.com/wp-connect.html
+详细说明: https://wptao.com/wp-connect.html
 
-V4.1更新日志: http://blogqun.com/wp-connect.html#Changelog
+V4.1更新日志: https://wptao.com/wp-connect.html#Changelog
 
 **您的网站直接对接新浪、腾讯等开放平台的接口，不经过任何第三方服务器，更加安全、稳定、高效。**
 
@@ -39,7 +39,7 @@ V4.1更新日志: http://blogqun.com/wp-connect.html#Changelog
 
 >新浪微博：[ @水脉烟香](http://weibo.com/smyx) 、[ @灯鹭](http://weibo.com/idenglu) 
 
->详细文档: http://blogqun.com/doc/wp-connect.html
+>详细文档: https://wptao.com/doc/wp-connect.html
 
 >开发者QQ：[3249892](http://wpa.qq.com/msgrd?v=3&uin=3249892&site=qq&menu=yes)
 

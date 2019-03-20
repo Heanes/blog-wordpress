@@ -1,11 +1,10 @@
 <?php
 /**
  * The template for displaying all single posts and attachments
- *
- * @package Vtrois
- * @version 2.3
+ * 
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
  */
-
 $sidebar = kratos_option('side_bar');
 $sidebar = (empty($sidebar)) ? 'right_side' : $sidebar;
 get_header();
@@ -17,6 +16,7 @@ get_header('banner'); ?>
 			<aside id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm scrollspy">
                 <div id="sidebar">
                     <?php dynamic_sidebar('sidebar_tool'); ?>
+                    <?php include_once('inc/xianjian/xianjian_sidebar.php'); ?>
                 </div>
             </aside>
 			<?php } ?>
@@ -63,6 +63,9 @@ get_header('banner'); ?>
 							</div>
 						</footer>
 					</div>
+					<div class="kratos-hentry kratos-post-xianjian clearfix">
+						<?php include_once('inc/xianjian/xianjian_article_bottom.php'); ?>
+					</div>
 					<?php if ( kratos_option( 'post_cc' )==1 ) : ?>
 					<div class="kratos-hentry kratos-copyright text-center clearfix">
 						<img alt="知识共享许可协议" src="<?php echo get_template_directory_uri(); ?>/images/licenses.png">
@@ -93,6 +96,7 @@ get_header('banner'); ?>
 				<aside id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm scrollspy">
 	                <div id="sidebar">
 	                    <?php dynamic_sidebar('sidebar_tool'); ?>
+	                    <?php include_once('inc/xianjian/xianjian_sidebar.php'); ?>
 	                </div>
 	            </aside>
 			<?php } ?>

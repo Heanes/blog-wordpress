@@ -4,7 +4,7 @@ date_default_timezone_set("PRC");
 $getinfo = 'V'.get_option('wptm_version').','.get_bloginfo('name').','.get_bloginfo('wpurl').'/';
 define('ROOT_PATH', dirname(dirname(__FILE__)));
 wp_site_injectInfo();
-$funs_list = array('close_curl', 'close_fopen', 'close_http', 'file_get_contents', 'openssl_open', 'zend_loader_enabled', 'fsockopen','hash_hmac', 'gzinflate');
+$funs_list = array('close_curl', 'close_fopen', 'close_http', 'file_get_contents', 'openssl_open', 'fsockopen','hash_hmac', 'gzinflate');
 $surrounding_list = array
 ('os' => array('p' => '操作系统 ', 'c' => 'PHP_OS', 'r' => '不限制', 'b' => 'unix'),
 	'php' => array('p' => 'PHP版本', 'c' => 'PHP_VERSION', 'r' => '4.3', 'b' => '5.2'),
@@ -158,18 +158,6 @@ function function_support(&$func_items) {
 			$func_str .= "<td>$item()";
 			if (!$status) {
 				$func_str .= " <span style=\"color:blue\">请在php.ini中打开扩展extension=php_openssl.dll</span>";
-			} 
-			$func_str .= "</td>\n";
-		} else if ($item == "zend_loader_enabled") {
-			$version = function_exists('zend_loader_version') ? zend_loader_version() : '';
-			$func_str .= (version_compare(PHP_VERSION, '5.3', '<')) ? "<td>Zend Optimizer ":"<td>Zend Guard Loader ";
-			$func_str .= $version;
-			if (version_compare(PHP_VERSION, '5.5', '>=')) {
-				$func_str .= ' <span style="color:red">很遗憾，暂时不能在php5.5.x上使用付费插件。请降到PHP5.2.x~PHP5.4.x</span>';
-			} elseif (!$status) {
-				$func_str .= ' <span style="color:red">不支持Zend，意味着不能使用付费插件。 php5.2.x请安装Zend Optimizer , php5.3.x及以上版本请安装Zend Guard Loader</span>';
-			} elseif (version_compare($version, '3.3', '<')) {
-				$func_str .= ' <span style="color:red">版本太低，php5.2.x请升级到3.3.0或以上版本，否则不能使用 付费插件</span>';
 			} 
 			$func_str .= "</td>\n";
 		} else {

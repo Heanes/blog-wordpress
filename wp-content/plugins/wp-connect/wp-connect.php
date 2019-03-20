@@ -2,13 +2,13 @@
 /*
 Plugin Name: WordPress连接微博
 Author: 水脉烟香
-Author URI: http://www.smyx.net/
-Plugin URI: http://blogqun.com/wp-connect.html
-Description: 支持使用20家合作网站帐号登录WordPress，同步文章、评论到微博/SNS，支持使用社会化评论。
-Version: 2.5.5
+Author URI: https://wptao.com/smyx
+Plugin URI: https://wptao.com/wp-connect.html
+Description: 支持使用20家合作网站帐号登录WordPress，同步文章、评论到微博/SNS，支持使用社会化评论。
+Version: 2.5.6
 */
 
-define('WP_CONNECT_VERSION', '2.5.5');
+define('WP_CONNECT_VERSION', '2.5.6');
 $wpurl = get_bloginfo('wpurl');
 $siteurl = get_bloginfo('url');
 $plugin_url = plugins_url('wp-connect');
@@ -56,7 +56,7 @@ add_action('init', 'wp_connect_set_session_init');
 add_action('admin_menu', 'wp_connect_add_page');
 
 include_once(dirname(__FILE__) . '/functions.php');
-include_once(dirname(__FILE__) . '/denglu.func.php'); //灯鹭自定义函数
+include_once(dirname(__FILE__) . '/denglu.func.php'); //灯鹭自定义函数
 include_once(dirname(__FILE__) . '/update.php');
 include_once(dirname(__FILE__) . '/sync.php');
 include_once(dirname(__FILE__) . '/connect.php');
@@ -110,10 +110,6 @@ function wp_connect_warning() {
 		$wptm_tips = get_option("wptm_tips");
 		if ($wptm_tips || version_compare($wp_version, '3.0', '<') || (donate_version($wp_connect_advanced_version) && WP_CONNECT_ADVANCED_VERSION != '1.4.3') || (($wptm_options || $wptm_connect) && (!$wptm_version || !$wptm_basic['denglu']) || !$wptm_basic)) {
 			echo '<div class="updated">';
-			if ($wptm_tips) {
-				echo '<p><form method="post" action=""><strong>WordPress连接微博 更新说明</strong> <input type="submit" name="closeTips" value="关闭提示" /></form></p>';
-				wp_connect_tips();
-			}
 			if (version_compare($wp_version, '3.0', '<')) {
 				echo '<p><strong>您的WordPress版本太低，请升级到WordPress3.0或者更高版本，否则不能正常使用“WordPress连接微博”。</strong></p>';
 			} 
@@ -132,35 +128,11 @@ function wp_connect_warning() {
 		}
 	}
 }
-add_action('admin_notices', 'wp_connect_warning'); 
-
-function wp_connect_tips() { 
-	global $plugin_url;
-?>
-<h2>Wordpress连接微博 专业版 v4.1 [<a href="http://blogqun.com/wp-connect.html#Changelog" target="_blank">更新日志</a>]</h2>
-<p><strong>插件简介：</strong><br />
-1. 使用微信、QQ、新浪微博等21个社交帐号登录您的网站。<br />
-2. 同步文章、评论到13个微博/SNS。<br />
-3. <a href="http://www.smyx.net/pinglun.html" target="_blank">本地化“社会化评论框”，包括微博评论回推到网站。</a><br />
-4. <a href="http://www.smyx.net/wp-connect-data.html" target="_blank">社交数据统计（包括注册/登录/同步评论等），社交用户分析（社交网站/性别/地区分布等）</a><span style="color: #ff0000;">NEW!</span><br />
-5. 同步全文或者部分内容到同步全文到新浪博客、网易博客、人人网、开心网、点点网、豆瓣日记、Tumblr、LOFTER（网易轻博客）、QQ空间、百度空间<br />
-6. 使用社会化分享按钮。<br />
-7. 写文章/发微博WAP页面（适用于手机浏览器）<br />
-8. 隐藏文章的部分或者全部内容，用户通过登录、回复、分享等行为后才能显示隐藏的内容。<br />
-9. 支持wp后台自动升级。<br />
-10. <strong>最新插件：</strong><a href="http://blogqun.com/wechat.html" target="_blank">WordPress连接微信</a> <span style="color: #ff0000;">NEW!</span>，支持使用微信发布微博。
-</p>
-<p><strong>插件地址：</strong><a href="http://blogqun.com/wp-connect.html" target="_blank">http://blogqun.com/wp-connect.html</a></p>
-<p><strong>您的网站直接对接新浪、腾讯等开放平台的接口，不经过任何第三方服务器，更加安全、稳定、高效。</strong></p>
-<p><strong>加水脉烟香为微信好友，可以用微信搜索微信号: smyxapp 或者扫描下面的二维码。(发送h可以获得帮助)：</strong><br /><img src="http://ww1.sinaimg.cn/small/62579065jw1e09m23tqfxj.jpg" /></p>
-<p><strong>关于插件：</strong><br />Wordpress连接微博 是由 <a href="http://www.smyx.net/" target="_blank">水脉烟香</a> 一人开发的Wordpress插件。插件于2011年1月20日发布第1版，目前包括免费版、专业版、基础版等。</strong></p>
-<p><strong>插件截图：</strong><br /><a href="http://blogqun.com/demo/wp-connect.html" target="_blank" title="点击查看更多截图"><img src="<?php echo $plugin_url;?>/images/wp-connect-pro.gif" /></a></p>
-<?php
-} 
-
+//add_action('admin_notices', 'wp_connect_warning'); 
 // 设置
 function wp_connect_do_page() {
 	global $wpurl,$plugin_url,$wptm_donate;
+	echo '<div class="error"><p><strong>很遗憾！WordPress连接微博免费版已年代久远，早就无法使用，如果您有需求（使用QQ、微博、微信登录及同步文章到微博等），请【<a href="https://wptao.com/wp-connect.html" target="_blank">点击这里</a>】购买专业版插件，买后卸载本插件，<a href="https://wptao.com/download" target="_blank">重新下载</a>安装后使用。</strong></p></div>';
 	wp_connect_update();
 	$wptm_options = get_option('wptm_options');
 	$wptm_connect = get_option('wptm_connect');
@@ -197,7 +169,7 @@ function wp_connect_do_page() {
 			}
 		} 
 	} else {
-		$error = '<div id="wptm-tips"><p><a href="#blog" class="blog">同步博客</a>、<a href="#share" class="share">分享设置</a>、<a href="#advanced" class="advanced">高级设置</a>是<a href="http://blogqun.com/wp-connect.html" target="_blank">WordPress连接微博专业版</a>的独有功能。</p></div>';
+		$error = '<div id="wptm-tips"><p><a href="#blog" class="blog">同步博客</a>、<a href="#share" class="share">分享设置</a>、<a href="#advanced" class="advanced">高级设置</a>是<a href="https://wptao.com/wp-connect.html" target="_blank">WordPress连接微博专业版</a>的独有功能。</p></div>';
 	    $disabled = " disabled";
 	}
 	$account = wp_option_account();
@@ -207,7 +179,7 @@ function wp_connect_do_page() {
 	$connect_plugin = true; // bind.php
 ?>
 <div class="wrap">
-  <div id="icon-themes" class="icon32"><br /></div><h2>WordPress连接微博 v<?php echo WP_CONNECT_VERSION;?> <code><a href="http://blogqun.com/wp-connect.html" target="_blank">获取专业版</a></code> <span style="padding-left:10px"><iframe width="63" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=1649905765&style=1&btn=red&dpc=1"></iframe></span></h2><div style="float:right;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZWMTWK2DGHCYS" target="_blank" title="PayPal"><img src="<?php echo $plugin_url;?>/images/donate_paypal.gif" /></a>/ <a href="http://blogqun.com/alipay/donate" target="_blank">支付宝</a></div>
+  <div id="icon-themes" class="icon32"><br /></div><h2>WordPress连接微博 v<?php echo WP_CONNECT_VERSION;?> <code><a href="https://wptao.com/wp-connect.html" target="_blank">获取专业版</a></code> <span style="padding-left:10px"><iframe width="63" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=1649905765&style=1&btn=red&dpc=1"></iframe></span></h2><div style="float:right;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZWMTWK2DGHCYS" target="_blank" title="PayPal"><img src="<?php echo $plugin_url;?>/images/donate_paypal.gif" /></a>/ <a href="https://wptao.com/alipay/donate" target="_blank">支付宝</a></div>
   <div class="tabs">
     <ul class="nav">
       <li><a href="#basic" class="basic">基本设置</a></li>
@@ -223,10 +195,8 @@ function wp_connect_do_page() {
       <li><a href="#advanced" class="advanced">高级设置</a></li>
 	  <?php } ?>
       <li><a href="#check" class="check">环境检查</a></li>
-	  <li><a href="#help" class="help">帮助文档</a></li>
     </ul>
     <div id="basic">
-      <h3>设置向导</h3>
 	  <?php
 	  if ($version == 1) {
 		  echo '<p>您已经成功安装了插件。';
@@ -237,35 +207,14 @@ function wp_connect_do_page() {
 		  }
 		  echo '</p>';
 	  } elseif ($version == 3 || $version == 5) {
-		  echo ($version == 3) ? '<p>您需要升级才能继续使用，' : '<p>这是您第一次使用，';?>
-	  	  请先用以下社交帐号登录，完成与 <a href="http://open.denglu.cc/codes/getCodes.jsp?siteType=3" target="_blank">灯鹭控制台</a> 的连接。您也可以在下面的“站点设置”填写您在灯鹭控制台获取的APP ID和APP Key</p>
-	      <p><a href="http://open.denglu.cc/transfer/qzone<?php echo $redirect_create;?>" title="使用QQ帐号登录"><img src="<?php echo $plugin_url;?>/images/qzone.png" /></a> <a href="http://open.denglu.cc/transfer/sina<?php echo $redirect_create;?>" title="使用新浪微博帐号登录"><img src="<?php echo $plugin_url;?>/images/sina.png" /></a> <a href="http://open.denglu.cc/transfer/tencent<?php echo $redirect_create;?>" title="使用腾讯微博帐号登录"><img src="<?php echo $plugin_url;?>/images/qq.png" /></a>  <a href="http://open.denglu.cc/transfer/renren<?php echo $redirect_create;?>" title="使用人人帐号登录"><img src="<?php echo $plugin_url;?>/images/renren.png" /></a> <a href="http://open.denglu.cc/transfer/douban<?php echo $redirect_create;?>" title="使用豆瓣帐号登录"><img src="<?php echo $plugin_url;?>/images/douban.png" /></a>  <a href="http://open.denglu.cc/transfer/baidu<?php echo $redirect_create;?>" title="使用百度帐号登录"><img src="<?php echo $plugin_url;?>/images/baidu.png" /></a>  <a href="http://open.denglu.cc/transfer/google<?php echo $redirect_create;?>" title="使用Google帐号登录"><img src="<?php echo $plugin_url;?>/images/google.png" /></a>  <a href="http://open.denglu.cc/transfer/twitter<?php echo $redirect_create;?>" title="使用Twitter帐号登录"><img src="<?php echo $plugin_url;?>/images/twitter.png" /></a>  <a href="http://open.denglu.cc/transfer/facebook<?php echo $redirect_create;?>" title="使用Facebook帐号登录"><img src="<?php echo $plugin_url;?>/images/facebook.png" /></a></p>
-	  <?php
+		 
+
 	  } elseif ($version == 4) {
 		  echo '<p>您以前安装过 灯鹭 插件旧版，需要升级数据库才能兼容新版，请先点击下面的“升级数据库”按钮。</p>';
 		  echo '<p><form method="post" action="options-general.php?page=wp-connect#basic"><span class="submit"><input type="submit" name="update_denglu" value="升级数据库" /></span></form></p>';
 	  }
 	  if ($version != 4) {
 	  ?>
-      <form method="post" action="options-general.php?page=wp-connect#basic">
-        <?php wp_nonce_field('basic-options');?>
-        <h3>站点设置</h3>
-		<span style="color:green">请不要随意更改站点的APP ID，否则将会导致社会化评论出现异常，如：评论无法继续导入。</span>
-	    <table class="form-table">
-		    <tr>
-			    <td width="25%" valign="top">APP ID: </td>
-			    <td><label><input type="text" name="appid" size="32" value="<?php echo $wptm_basic['appid'];?>" /></label> (必填)</td>
-		    </tr>
-		    <tr>
-			    <td width="25%" valign="top">APP Key: </td>
-			    <td><label><input type="text" name="appkey" size="32" value="<?php echo $wptm_basic['appkey'];?>" /></label> (必填) (非常重要,不能泄漏)</td>
-		    </tr>
-        </table>
-        <p class="submit">
-		  <input type="hidden" name="denglu" value="1" />
-          <input type="submit" name="basic_options" class="button-primary" value="<?php _e('Save Changes') ?>" />
-        </p>
-      </form>
 	  <?php }
 	  if ($version == 1 || $version == 2) { ?>
 	  <h3>其他登录插件</h3>
@@ -283,7 +232,6 @@ function wp_connect_do_page() {
       <div id="wptm-tips">
 	    <p><strong>友情提示</strong></p>
         <p>若在使用时出现“时间戳有误”，请先点击“环境检查”查看服务器时间，跟北京时间对比下，然后在“同步微博”下面的“服务器时间校正”填写时间差！</p>
-	    <p style="color:#880"><strong>从WordPress连接微博 插件旧版升级到V2.0 <a href="http://bbs.denglu.cc/thread-9056-1-1.html" target="_blank">注意事项</a></strong></p>
 	    <p>新浪微博、淘宝网回调地址：<code><?php echo $plugin_url.'/dl_receiver.php';?></code></p>
 	  </div>
     </div>
@@ -662,17 +610,11 @@ function wp_connect_do_page() {
         <p class="submit">
           <input type="submit" name="advanced_options" class="button-primary" value="<?php _e('Save Changes') ?>" />
         </p>
-		<div id="wptm-tips"><p>提示：高级设置版本已经停止更新，请看[ <a href="http://blogqun.com/wp-connect.html" target="_blank">WordPress连接微博专业版</a> ]</p></div>
+		<div id="wptm-tips"><p>提示：高级设置版本已经停止更新，请看[ <a href="https://wptao.com/wp-connect.html" target="_blank">WordPress连接微博专业版</a> ]</p></div>
       </form>
     </div>
     <div id="check">
 	<p><iframe width="100%" height="680" frameborder="0" scrolling="no" src="<?php echo $plugin_url.'/check.php'?>"></iframe></p>
-    </div>
-    <div id="help">
-	  <div id="wptm-tips">
-	  <p><strong><a href="http://www.denglu.cc/source/wordpress2.0.html" target="_blank">点击查看 WordPress连接微博 v<?php echo WP_CONNECT_VERSION;?> 官方帮助文档</a></strong></p>
-	  <?php wp_connect_tips();?>
-	  </div>
     </div>
   </div>
 </div>

@@ -1,11 +1,10 @@
 <?php
 /**
  * The main template file
- *
- * @package Vtrois
- * @version 2.3
+ * 
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
  */
-
 get_header(); ?>
 <?php 
 if(is_category()){
@@ -61,10 +60,12 @@ if(is_category()){
 
         		<?php kratos_pages(3);?>
 				<?php wp_reset_query(); ?>
+				<?php include_once('inc/xianjian/xianjian_home_bottom.php'); ?>
 			</section>
 			<aside id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm scrollspy">
                 <div id="sidebar">
                     <?php dynamic_sidebar('sidebar_tool'); ?>
+                    <?php include_once('inc/xianjian/xianjian_sidebar.php'); ?>
                 </div>
             </aside>
 		</div>
